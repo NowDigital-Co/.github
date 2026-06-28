@@ -1,0 +1,46 @@
+name: 🙋🏻 Question
+description: 코드 또는 진행 방향 등 궁금한 내용을 질문합니다.
+title: "[QUESTION] "
+labels:
+    - 🙋🏻 question
+body:
+    - type: markdown
+      attributes:
+          value: |
+              ---
+              ### 이슈를 작성하기 전에 아래 내용을 확인해주세요:
+              - 동일한 질문에 대한 이슈가 없음을 확인했습니다.
+              - 질문 내용과 목적이 명확합니다.
+
+    - type: textarea
+      id: task-description
+      attributes:
+          label: 📄 질문 내용
+          description: 질문 내용을 작성해주세요.
+      validations:
+          required: true
+
+    - type: textarea
+      id: linked-issue
+      attributes:
+          label: ⛓️ 관련 이슈
+          description: 질문과 관련되어있는 이슈를 작성해주세요. (선택 사항)
+          placeholder: |
+              - #1
+              - #2
+
+    - type: textarea
+      id: additional-context
+      attributes:
+          label: 👍🏻 추가 정보
+          description: 질문을 이해하는 데 도움이 될 스크린샷, 첨부파일, 링크 등 추가 정보를 작성해주세요. (선택 사항)
+
+    - type: markdown
+      attributes:
+          value: |
+              ---
+              ### 이슈를 생성하기 전에 아래 내용을 확인해주세요:
+              - 제목이 질문의 내용을 잘 표현하고 있습니다.
+              - 본인과 질문 대상을 작업자로 지정했습니다.
+              - Label이 단 하나만 선택되어 있습니다.
+              - 프로젝트를 연결했습니다.
